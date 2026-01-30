@@ -10,7 +10,7 @@ A robust, 4-wheel drive Line Follower Robot powered by an **Arduino Uno**. This 
 
 | **Real World View** | **Circuit Diagram** |
 |:-------------------:|:-------------------:|
-| ![Robot View](image 1.jpeg) | ![Circuit Diagram](image 2.jpeg) |
+| ![Robot View](image1.jpeg) | ![Circuit Diagram](image2.jpeg) |
 | *The assembled 4WD Chassis* | *Wiring Schematic* |
 
 ---
