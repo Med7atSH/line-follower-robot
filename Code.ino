@@ -78,4 +78,77 @@ void forward() {
   
   // Right Motor -> Forward
   digitalWrite(in3, LOW); 
-  digitalWrite(in4,
+  digitalWrite(in4, HIGH); // Check wiring if wheels spin backward
+  
+  // Set Speed
+  analogWrite(enA, N_speed);
+  analogWrite(enB, N_speed);
+}
+
+void left() {
+  // Sharp Left: Left Motor Backward, Right Motor Forward
+  
+  // Left Motor -> Backward
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+  
+  // Right Motor -> Forward
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
+  
+  analogWrite(enA, R_speed);
+  analogWrite(enB, R_speed);
+}
+
+void slowleft() {
+  // Slow Left: Left Motor Stop, Right Motor Forward
+  
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, LOW);
+  
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
+  
+  analogWrite(enA, F_speed);
+  analogWrite(enB, F_speed);
+}
+
+void Right() {
+  // Sharp Right: Left Motor Forward, Right Motor Backward
+  
+  // Left Motor -> Forward
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
+  
+  // Right Motor -> Backward
+  digitalWrite(in3, HIGH);
+  digitalWrite(in4, LOW);
+  
+  analogWrite(enA, R_speed);
+  analogWrite(enB, R_speed);
+}
+
+void slowRight() {
+  // Slow Right: Left Motor Forward, Right Motor Stop
+  
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
+  
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, LOW);
+  
+  analogWrite(enA, F_speed);
+  analogWrite(enB, F_speed);
+}
+
+void Stop() {
+  // Stop all motors
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, LOW);
+  
+  // Set speed to 0
+  analogWrite(enA, 0);
+  analogWrite(enB, 0);
+}
