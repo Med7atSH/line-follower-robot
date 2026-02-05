@@ -112,5 +112,5 @@ The logic is straightforward and relies on reading digital signals from the IR s
 
 ### 👤 Author
 
-Developed with ❤️ by **[Your Name]**.
+Developed with ❤️ by <h4>Med7at Sharaf<h4>.
 Feel free to fork this repository and improve it!
